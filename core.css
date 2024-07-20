@@ -227,6 +227,26 @@
         #app-mount .unreadBar_c43953 {background-color: var(--secondary2-colour);}
 
         #app-mount .autocomplete_f23da8 {background-color: var(--secondary3-colour);}
+/* top corner title */
+[class^='wordmarkWindows'] {
+	padding: 4px var(--spacing);
+}
+[class^='wordmarkWindows'] > svg {
+	display: none;
+}
+[class^='wordmarkWindows']::after {
+	content: var(--corner-text);
+	display: block;
+	position: relative;
+	height: 16px;
+	line-height: 16px;
+	font-family: var(--font);
+	font-size: 13px;
+	font-weight: 900;
+	color: var(--text-5);
+	transform: scaleX(1.2);
+	margin-left: 6px;
+}
 
         /*Text Channels*/
             #app-mount .containerDefault_f6f816 .wrapper_d8bfb3:hover {width: 100%;}
@@ -880,3 +900,5 @@
     #app-mount .wordmark_a934d8 {top: 3.3px;}
     #app-mount .winButton_a934d8 {top: 2px;}
     #app-mount .winButton_a934d8 {top: 2px;}
+
+
